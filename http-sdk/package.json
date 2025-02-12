@@ -1,0 +1,22 @@
+{
+  "name": "@precision-sustainable-ag/http-sdk",
+  "version": "1.2.6",
+  "main": "index.js",
+  "dependencies": {
+    "@precision-sustainable-ag/psa-utils": "^1.0.0",
+    "cross-env": "^7.0.3",
+    "esm": "^3.2.25",
+    "express": "^4.21.1",
+    "swagger-ui-express": "^5.0.1",
+    "yaml": "^2.6.0"
+  },
+  "scripts": {
+    "test": "cross-env APP_ENV=test jest ./tests --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

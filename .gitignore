@@ -1,3 +1,9 @@
+.deprecated
+.deprecated/
+.deprecated/*
+.sandbox
+.sandbox/
+.sandbox/*
 # Logs
 logs
 *.log
