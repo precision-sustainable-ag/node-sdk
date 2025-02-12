@@ -1,6 +1,6 @@
 {
   "name": "@precision-sustainable-ag/http-sdk",
-  "version": "1.2.7",
+  "version": "1.2.9",
   "main": "index.js",
   "dependencies": {
     "@precision-sustainable-ag/psa-utils": "^1.0.0",

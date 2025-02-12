@@ -1,9 +1,11 @@
 const {HttpStatusCodes} = require('../http/StatusCodes.js');
-const { Log } = require('@precision-sustainable-ag/psa-utils');
+const { Log, isFunction } = require('@precision-sustainable-ag/psa-utils');
 
 function ErrorRenderer(err, req, res, next) {
-    const statusCode = err.getStatus() || HttpStatusCodes.internal;
     let response;
+    let statusCode = HttpStatusCodes.internal;
+    
+    if(isFunction(err.getStatus)) statusCode = err.getStatus();
     
     if(err?.toJSON) response = err.toJSON();
     else response = {
