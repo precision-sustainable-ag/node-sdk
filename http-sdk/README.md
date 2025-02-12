@@ -91,7 +91,7 @@ project-root/
 #### src/app.js
 ```javascript
 
-const {ServerI} = require('@precision-sustainable-ag/http-sdk');
+const { HttpServer } = require("@precision-sustainable-ag/http-sdk");
 
 const App = ServerI.factory({
     PORT:8081, 
